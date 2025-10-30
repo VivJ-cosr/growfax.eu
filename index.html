@@ -17,7 +17,7 @@
       text-align: center;
       overflow-x: hidden;
     }
-    img {
+    img.banner {
       max-width: 600px;
       width: 90%;
       margin-top: 60px;
@@ -26,26 +26,45 @@
       animation: glow 5s infinite alternate;
     }
     h1 {
-      font-size: 2.5em;
+      font-size: 2.3em;
       color: #00ffe0;
       text-shadow: 0 0 15px #00ffe0;
       margin-top: 30px;
     }
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 30px 0 80px 0;
+    .downloads {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin: 50px 0;
     }
-    li {
-      margin: 10px 0;
+    .file-card {
+      background: #0f0f0f;
+      border-radius: 15px;
+      padding: 25px 20px;
+      width: 200px;
+      transition: 0.3s;
+      box-shadow: 0 0 10px #00ffe022;
     }
-    a {
+    .file-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #00ffe0aa;
+    }
+    .file-card img {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+    .file-card a {
       color: #00ffe0;
       text-decoration: none;
-      font-size: 1.2em;
+      font-size: 1.05em;
       transition: 0.3s;
+      display: block;
+      margin-top: 5px;
     }
-    a:hover {
+    .file-card a:hover {
       color: #00c6a0;
       text-shadow: 0 0 10px #00ffe0;
     }
@@ -62,18 +81,36 @@
   </style>
 </head>
 <body>
-  <!-- Gambar utama -->
-  <img src="https://vivj-cosr.github.io/growfax.eu/Growfax_banner.png" alt="Growfax Banner" />
+  <!-- Banner utama -->
+  <img class="banner" src="https://vivj-cosr.github.io/growfax.eu/Growfax_banner.png" alt="Growfax Banner" />
 
   <h1>Growfax.eu Downloads</h1>
 
-  <!-- Daftar file -->
-  <ul>
-    <li><a href="https://vivj-cosr.github.io/growfax.eu/GrowFax%20ios.txt" download>GrowFax ios.txt</a></li>
-    <li><a href="https://vivj-cosr.github.io/growfax.eu/Growfax_Patched_.bat" download>Growfax_Patched_.bat</a></li>
-    <li><a href="https://vivj-cosr.github.io/growfax.eu/PowerTunel_Host.txt" download>PowerTunel_Host.txt</a></li>
-    <li><a href="https://vivj-cosr.github.io/growfax.eu/Growfax_VirtualHost.txt" download>Growfax_VirtualHost.txt</a></li>
-  </ul>
+  <div class="downloads">
+    <!-- File Windows -->
+    <div class="file-card">
+      <img src="https://vivj-cosr.github.io/growfax.eu/windows.png" alt="Windows Icon">
+      <a href="https://vivj-cosr.github.io/growfax.eu/Growfax_Patched_.bat" download>Growfax_Patched_.bat</a>
+    </div>
+
+    <!-- File iOS -->
+    <div class="file-card">
+      <img src="https://vivj-cosr.github.io/growfax.eu/surge5.png" alt="iOS Icon">
+      <a href="https://vivj-cosr.github.io/growfax.eu/GrowFax%20ios.txt" download>GrowFax ios.txt</a>
+    </div>
+
+    <!-- File PowerTunnel -->
+    <div class="file-card">
+      <img src="https://vivj-cosr.github.io/growfax.eu/powertunnel.jpeg" alt="PowerTunnel Icon">
+      <a href="https://vivj-cosr.github.io/growfax.eu/PowerTunel_Host.txt" download>PowerTunel_Host.txt</a>
+    </div>
+
+    <!-- File Virtual Host -->
+    <div class="file-card">
+      <img src="https://vivj-cosr.github.io/growfax.eu/virtual-host.png" alt="Virtual Host Icon">
+      <a href="https://vivj-cosr.github.io/growfax.eu/Growfax_VirtualHost.txt" download>Growfax_VirtualHost.txt</a>
+    </div>
+  </div>
 
   <footer>© 2025 VivJ — Powered by GitHub Pages</footer>
 </body>
