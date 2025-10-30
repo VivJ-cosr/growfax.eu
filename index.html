@@ -5,18 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Growfax.eu</title>
   <style>
-    /* 🌈 Smooth Color Cycle Animation */
-    @keyframes colorCycle {
-      0%   { background-color: #ff0040; }
-      15%  { background-color: #ff8c00; }
-      30%  { background-color: #ffe600; }
-      45%  { background-color: #00ff0a; }
-      60%  { background-color: #00ffee; }
-      75%  { background-color: #0040ff; }
-      90%  { background-color: #8000ff; }
-      100% { background-color: #ff0040; }
-    }
-
+    /* 🌿 Growtopia Grassland Background */
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
@@ -27,22 +16,23 @@
       min-height: 100vh;
       text-align: center;
       overflow-x: hidden;
-      background: #000;
-      animation: colorCycle 15s infinite alternate;
-      transition: background 1s ease-in-out;
+      background: linear-gradient(to top, #2e7d32 0%, #66bb6a 40%, #a7ffeb 100%);
+      background-attachment: fixed;
     }
 
-    @keyframes text-glow {
-      0% { color: #ff0040; text-shadow: 0 0 15px #ff0040; }
-      25% { color: #ff8c00; text-shadow: 0 0 15px #ff8c00; }
-      50% { color: #00ff0a; text-shadow: 0 0 15px #00ff0a; }
-      75% { color: #00ffee; text-shadow: 0 0 15px #00ffee; }
-      100% { color: #ff0040; text-shadow: 0 0 15px #ff0040; }
+    /* ✨ RGB Text Cycle */
+    @keyframes rgbText {
+      0% { color: #ff0040; text-shadow: 0 0 10px #ff0040; }
+      20% { color: #ffa500; text-shadow: 0 0 10px #ffa500; }
+      40% { color: #00ff0a; text-shadow: 0 0 10px #00ff0a; }
+      60% { color: #00ffee; text-shadow: 0 0 10px #00ffee; }
+      80% { color: #0040ff; text-shadow: 0 0 10px #0040ff; }
+      100% { color: #ff00ff; text-shadow: 0 0 10px #ff00ff; }
     }
 
     @keyframes glow {
-      from { box-shadow: 0 0 15px #ffffff22; }
-      to { box-shadow: 0 0 35px #ffffff55; }
+      from { box-shadow: 0 0 15px rgba(255,255,255,0.3); }
+      to { box-shadow: 0 0 35px rgba(255,255,255,0.6); }
     }
 
     img.banner {
@@ -50,12 +40,13 @@
       width: 90%;
       margin-top: 60px;
       border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.3);
       animation: glow 4s infinite alternate;
     }
 
     h1 {
       font-size: 2.4em;
-      animation: text-glow 8s infinite linear;
+      animation: rgbText 8s infinite linear;
       margin-top: 25px;
     }
 
@@ -69,7 +60,7 @@
     }
 
     .file-card {
-      background: rgba(0,0,0,0.65);
+      background: rgba(0, 0, 0, 0.55);
       border-radius: 15px;
       padding: 25px 20px;
       width: 260px;
@@ -90,7 +81,7 @@
       width: 70px;
       height: 70px;
       border-radius: 10px;
-      box-shadow: 0 0 15px rgba(255,255,255,0.3);
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
     }
 
     .file-card a {
@@ -99,23 +90,22 @@
       font-size: 1.2em;
       font-weight: bold;
       text-decoration: none;
-      color: #fff;
-      animation: text-glow 6s infinite linear;
+      animation: rgbText 8s infinite linear;
     }
 
     .steps {
       font-size: 0.9em;
-      color: #eee;
+      color: #e8f5e9;
       line-height: 1.5em;
       margin-top: 10px;
     }
 
-    .steps strong { color: #00ffe0; }
+    .steps strong { animation: rgbText 6s infinite linear; }
 
     footer {
       font-size: 0.9em;
       margin: 40px 0 20px;
-      animation: text-glow 6s infinite linear;
+      animation: rgbText 8s infinite linear;
     }
 
     code {
