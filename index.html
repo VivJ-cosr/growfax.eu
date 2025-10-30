@@ -37,36 +37,50 @@
       justify-content: center;
       gap: 40px;
       margin: 50px 0;
+      max-width: 1200px;
     }
     .file-card {
       background: #0f0f0f;
       border-radius: 15px;
       padding: 25px 20px;
-      width: 200px;
+      width: 260px;
       transition: 0.3s;
       box-shadow: 0 0 10px #00ffe022;
+      text-align: left;
     }
     .file-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 0 20px #00ffe0aa;
     }
     .file-card img {
+      display: block;
+      margin: 0 auto 10px auto;
       width: 70px;
       height: 70px;
-      margin-bottom: 10px;
       border-radius: 10px;
     }
     .file-card a {
       color: #00ffe0;
       text-decoration: none;
-      font-size: 1.05em;
+      font-size: 1.2em;
       transition: 0.3s;
       display: block;
-      margin-top: 5px;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10px;
     }
     .file-card a:hover {
       color: #00c6a0;
       text-shadow: 0 0 10px #00ffe0;
+    }
+    .steps {
+      font-size: 0.9em;
+      color: #ccc;
+      line-height: 1.5em;
+      margin-top: 10px;
+    }
+    .steps strong {
+      color: #00ffe0;
     }
     footer {
       color: #777;
@@ -87,28 +101,63 @@
   <h1>Growfax.eu Downloads</h1>
 
   <div class="downloads">
-    <!-- File Windows -->
+    <!-- Windows -->
     <div class="file-card">
       <img src="https://vivj-cosr.github.io/growfax.eu/windows.png" alt="Windows Icon">
-      <a href="https://vivj-cosr.github.io/growfax.eu/Growfax_Patched_.bat" download>Growfax_Patched_.bat</a>
+      <a href="https://vivj-cosr.github.io/growfax.eu/Growfax_Patched_.bat" download>Windows</a>
+      <div class="steps">
+        <strong>Steps for Windows:</strong><br>
+        1 - Press ⊞ Win+R (Windows Key + R) to open the "Run" window.<br>
+        2 - Type <code>C:\Windows\System32\drivers\etc</code> in the textbox.<br>
+        3 - Find file named <strong>hosts</strong>.<br>
+        4 - Right-click on "hosts" and edit it with Notepad/text editor.<br>
+        5 - Add the IP above.<br>
+        6 - Then Save and log in to Growtopia.
+      </div>
     </div>
 
-    <!-- File iOS -->
+    <!-- iOS -->
     <div class="file-card">
       <img src="https://vivj-cosr.github.io/growfax.eu/surge5.png" alt="iOS Icon">
-      <a href="https://vivj-cosr.github.io/growfax.eu/GrowFax%20ios.txt" download>GrowFax ios.txt</a>
+      <a href="https://vivj-cosr.github.io/growfax.eu/GrowFax%20ios.txt" download>iOS</a>
+      <div class="steps">
+        <strong>Steps for iOS (Surge 5):</strong><br>
+        1 - Download App called <strong>"Surge 5"</strong> from App Store.<br>
+        2 - Press "OK".<br>
+        3 - Click "Default.conf".<br>
+        4 - Click "IMPORT" → Download Profile from URL.<br>
+        5 - Paste URL from the button above, click "OK" and "Done".<br>
+        6 - Press "SETUP" and agree to the policy ("OK" → "Allow" for VPN Config).<br>
+        7 - Done! Open Growtopia and connect.
+      </div>
     </div>
 
-    <!-- File PowerTunnel -->
+    <!-- PowerTunnel (Android) -->
     <div class="file-card">
       <img src="https://vivj-cosr.github.io/growfax.eu/powertunnel.jpeg" alt="PowerTunnel Icon">
-      <a href="https://vivj-cosr.github.io/growfax.eu/PowerTunel_Host.txt" download>PowerTunel_Host.txt</a>
+      <a href="https://vivj-cosr.github.io/growfax.eu/PowerTunel_Host.txt" download>PowerTunnel (Android)</a>
+      <div class="steps">
+        <strong>Steps for Android:</strong><br>
+        1 - Download <strong>PowerTunnel App</strong> from Play Store.<br>
+        2 - Click the "PowerTunnel" button above.<br>
+        3 - It will copy the PowerTunnel host link.<br>
+        4 - Open the PowerTunnel app, click the ☰ icon, then Host Settings.<br>
+        5 - Paste the copied host URL. Change update period to "On Start".<br>
+        6 - Now you can log in to your GTPS!
+      </div>
     </div>
 
-    <!-- File Virtual Host -->
+    <!-- VirtualHost -->
     <div class="file-card">
-      <img src="https://vivj-cosr.github.io/growfax.eu/virtual-host.png" alt="Virtual Host Icon">
-      <a href="https://vivj-cosr.github.io/growfax.eu/Growfax_VirtualHost.txt" download>Growfax_VirtualHost.txt</a>
+      <img src="https://vivj-cosr.github.io/growfax.eu/virtual-host.png" alt="VirtualHost Icon">
+      <a href="https://vivj-cosr.github.io/growfax.eu/Growfax_VirtualHost.txt" download>VirtualHost</a>
+      <div class="steps">
+        <strong>Steps for VirtualHost:</strong><br>
+        1 - Download VirtualHost App (Android).<br>
+        2 - Click "VirtualHost" button above to copy the host list.<br>
+        3 - Open VirtualHost and paste the content into configuration.<br>
+        4 - Activate VPN and enjoy Growfax GTPS!
+      </div>
     </div>
   </div>
 
