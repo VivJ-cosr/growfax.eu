@@ -1,72 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Growfax.eu</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="3; url=https://growsoft.cc/android/8845" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Growfax.eu Redirect</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: radial-gradient(circle at top, #0a0a0a 0%, #050505 100%);
-      color: #e0e0e0;
+      height: 100vh;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      height: 100vh;
+      align-items: center;
+      background: radial-gradient(circle at top, #0a0a0a 0%, #050505 100%);
+      font-family: 'Poppins', sans-serif;
+      color: #e0e0e0;
       overflow: hidden;
     }
     h1 {
-      font-size: 3em;
       color: #00ffe0;
+      font-size: 2.5em;
       text-shadow: 0 0 15px #00ffe0;
+      animation: glow 2s infinite alternate;
       margin-bottom: 10px;
     }
     p {
-      font-size: 1.2em;
       color: #a0a0a0;
-      letter-spacing: 2px;
-      margin-bottom: 40px;
-    }
-    .button {
-      background: #00ffe0;
-      color: #000;
-      padding: 12px 28px;
-      margin: 10px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
       font-size: 1.1em;
-      transition: all 0.3s ease;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .button:hover {
-      background: #00c6a0;
-      transform: scale(1.05);
     }
     .glow {
       position: absolute;
-      width: 400px;
-      height: 400px;
+      width: 500px;
+      height: 500px;
       background: radial-gradient(circle, rgba(0,255,255,0.15) 0%, rgba(0,0,0,0) 70%);
       animation: pulse 6s infinite alternate;
+      z-index: 0;
     }
     @keyframes pulse {
       from { transform: scale(0.8); opacity: 0.7; }
       to { transform: scale(1.2); opacity: 0.3; }
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00ffe0, 0 0 20px #00aaff; }
+      to { text-shadow: 0 0 25px #00aaff, 0 0 50px #00ffff; }
+    }
+    a {
+      color: #00ffe0;
+      text-decoration: none;
+      border: 2px solid #00ffe0;
+      padding: 10px 25px;
+      border-radius: 8px;
+      margin-top: 30px;
+      transition: 0.3s;
+      font-weight: bold;
+      z-index: 2;
+    }
+    a:hover {
+      background: #00ffe0;
+      color: #000;
+      box-shadow: 0 0 25px #00ffe0;
     }
   </style>
 </head>
 <body>
   <div class="glow"></div>
   <h1>Growfax.eu</h1>
-  <p>Growfax Play</p>
-
-  <!-- Tombol download -->
-  <a class="button" href="GrowFax%20ios.txt" download>Play iOS</a>
-  <a class="button" href="Growfax_Patched_.bat" download>Play Windows</a>
+  <p>Redirecting to Growfax Play...</p>
+  <a href="https://growsoft.cc/android/8845">Click here if not redirected</a>
 </body>
 </html>
 
