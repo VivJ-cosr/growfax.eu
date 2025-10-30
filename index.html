@@ -30,9 +30,9 @@
       height: 100%;
       background: rgba(0, 0, 0, 0.45);
       z-index: 0;
+      pointer-events: none; /* ✅ Supaya tidak menutupi tombol */
     }
 
-    /* Animasi fade in */
     @keyframes fadeInUp {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -79,6 +79,8 @@
       box-shadow: 0 0 15px rgba(255,255,255,0.15);
       text-align: left;
       backdrop-filter: blur(10px);
+      position: relative;
+      z-index: 2;
     }
 
     .file-card:hover {
@@ -102,6 +104,14 @@
       font-weight: bold;
       text-decoration: none;
       color: #00ffee;
+      margin-bottom: 8px;
+      cursor: pointer;
+      z-index: 3;
+      position: relative;
+    }
+
+    .file-card a:hover {
+      text-shadow: 0 0 10px #00ffee;
     }
 
     .steps {
@@ -223,7 +233,6 @@
     </div>
   </div>
 
-  <!-- Discord Join Section -->
   <div class="discord-section">
     <a href="https://discord.gg/smgS6sq83y" target="_blank">
       <img src="discord.jpeg" alt="Discord" class="discord-icon" />
