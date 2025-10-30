@@ -2,72 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="3; url=https://growsoft.cc/android/8845" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Growfax.eu Redirect</title>
+  <title>Growfax Play</title>
   <style>
-    body {
+    html, body {
       margin: 0;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background: radial-gradient(circle at top, #0a0a0a 0%, #050505 100%);
-      font-family: 'Poppins', sans-serif;
-      color: #e0e0e0;
+      height: 100%;
       overflow: hidden;
+      background: #000;
+      font-family: 'Poppins', sans-serif;
     }
-    h1 {
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .header {
+      position: fixed;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
       color: #00ffe0;
-      font-size: 2.5em;
       text-shadow: 0 0 15px #00ffe0;
-      animation: glow 2s infinite alternate;
-      margin-bottom: 10px;
-    }
-    p {
-      color: #a0a0a0;
-      font-size: 1.1em;
-    }
-    .glow {
-      position: absolute;
-      width: 500px;
-      height: 500px;
-      background: radial-gradient(circle, rgba(0,255,255,0.15) 0%, rgba(0,0,0,0) 70%);
-      animation: pulse 6s infinite alternate;
-      z-index: 0;
-    }
-    @keyframes pulse {
-      from { transform: scale(0.8); opacity: 0.7; }
-      to { transform: scale(1.2); opacity: 0.3; }
-    }
-    @keyframes glow {
-      from { text-shadow: 0 0 10px #00ffe0, 0 0 20px #00aaff; }
-      to { text-shadow: 0 0 25px #00aaff, 0 0 50px #00ffff; }
-    }
-    a {
-      color: #00ffe0;
-      text-decoration: none;
-      border: 2px solid #00ffe0;
-      padding: 10px 25px;
-      border-radius: 8px;
-      margin-top: 30px;
-      transition: 0.3s;
       font-weight: bold;
-      z-index: 2;
-    }
-    a:hover {
-      background: #00ffe0;
-      color: #000;
-      box-shadow: 0 0 25px #00ffe0;
+      z-index: 10;
+      font-size: 1.2em;
+      pointer-events: none;
     }
   </style>
 </head>
 <body>
-  <div class="glow"></div>
-  <h1>Growfax.eu</h1>
-  <p>Redirecting to Growfax Play...</p>
-  <a href="https://growsoft.cc/android/8845">Click here if not redirected</a>
+  <div class="header">Growfax Play</div>
+  <iframe src="https://growsoft.cc/android/8845" allow="fullscreen; autoplay"></iframe>
 </body>
 </html>
 
